@@ -10,7 +10,7 @@ print('\ntest link: https://www.jiocinema.com/movies/sergeant-bhojpuri/3767689\n
 link = input('link: ')
 link_id = re.findall(r'.*/(.*)', link)[0].strip()
 
-m3u8DL_RE = 'N_m3u8DL-RE'
+m3u8DL_RE = './N_m3u8DL-RE'
 
 def replace_invalid_chars(title: str) -> str:
     invalid_chars = {'<': '\u02c2', '>': '\u02c3',
